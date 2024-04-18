@@ -29,7 +29,7 @@ public class Cliente
     public string AltaCliente()
     {
 
-        SqlConnection conexion = new SqlConnection("Server=25.7.247.173,1433;database=hotel;User Id=dev;Password=andres123;");
+        SqlConnection conexion = new SqlConnection("Server="";database="";User Id="";Password="";");
         SqlCommand cmd = new SqlCommand("ClienteAgregarActualizar", conexion);
         cmd.CommandType = CommandType.StoredProcedure;
 
@@ -51,7 +51,7 @@ public class Cliente
 
     public string ConsultaClientes()
     {
-        SqlConnection conexion = new SqlConnection("Server=25.7.247.173,1433;database=hotel;User Id=dev;Password=andres123;");
+        SqlConnection conexion = new SqlConnection("Server="";database="";User Id="";Password="";");
         SqlCommand cmd = new SqlCommand("ClienteConsultarActualizar", conexion);
         cmd.CommandType = CommandType.StoredProcedure;
         SqlDataAdapter da = new SqlDataAdapter(cmd);
