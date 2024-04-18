@@ -40,7 +40,7 @@ namespace AdminHotel
         {
             try
             {
-                using (SqlConnection conexion = new SqlConnection("Server=25.7.247.173,1433;database=hotel;User Id=dev;Password=andres123;"))
+                using (SqlConnection conexion = new SqlConnection("Server="";database=";User Id="";Password="";"));
                 {
                     conexion.Open();
                     SqlCommand cmd = new SqlCommand("ClienteAgregar", conexion);
@@ -69,7 +69,7 @@ namespace AdminHotel
         public DataSet ConsultaClientes(int clienteID, string nombre, string apellidoPaterno, string apellidoMaterno, string email, string telefono)
         {
             DataSet ds = new DataSet();
-            SqlConnection conexion = new SqlConnection("Server=25.7.247.173,1433;database=hotel;User Id=dev;Password=andres123;");
+            SqlConnection conexion = new SqlConnection("Server="";database=";User Id="";Password="";"));
             SqlCommand cmd = new SqlCommand("ClienteConsulta", conexion);
             cmd.CommandType = CommandType.StoredProcedure;
             
