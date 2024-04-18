@@ -43,7 +43,7 @@ namespace AdminHotel
         //}
         public DataSet ConsultaReservas()
         {
-            SqlConnection conexion = new SqlConnection("Server=25.7.247.173,1433;database=hotel;User Id=dev;Password=andres123;");
+            SqlConnection conexion = new SqlConnection("Server="";database="";User Id="";Password="";");
             SqlCommand cmd = new SqlCommand("ListarReservasPorCliente", conexion);
             cmd.CommandType = CommandType.StoredProcedure;
             SqlDataAdapter da = new SqlDataAdapter(cmd);
